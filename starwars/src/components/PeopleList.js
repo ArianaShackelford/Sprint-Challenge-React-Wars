@@ -9,7 +9,7 @@ const Container = styled.div`
  flex-wrap: wrap;
  flex-direction: row;
  justify-content: center;
-
+ @import url('https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
 `;
 
 const PeopleList =() => {

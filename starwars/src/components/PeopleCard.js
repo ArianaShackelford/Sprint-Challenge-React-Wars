@@ -5,9 +5,10 @@ import styled from 'styled-components';
 const Card = styled.div`
     width: 300px;
     max-height: 30rem;
-    background: white;
+    background: snow;
     margin: 20px;
     border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
 `;
 
 const Name = styled.h2`
@@ -19,21 +20,20 @@ const Name = styled.h2`
     justify-content: center;
     margin: 0px;
     border-radius: 10px 10px 0px 0px;
+    
 `;
 
-const Info = styled.p`
 
-`;
 
 const PeopleCard = (props) => {
     return(
         <>
             <Card className = 'personCard'>
                 <Name>{props.name}</Name>
-                <Info>Height: {props.height}"</Info>
-                <Info>Weight: {props.mass}lbs</Info>
-                <Info>Hair color: {props.hairColor}</Info>
-                <Info>Skin color: {props.skinColor}</Info>
+                <p>Height: {props.height}"</p>
+                <p>Weight: {props.mass}lbs</p>
+                <p>Hair color: {props.hairColor}</p>
+                <p>Skin color: {props.skinColor}</p>
             </Card>
         </>
     )
