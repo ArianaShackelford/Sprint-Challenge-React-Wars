@@ -16,6 +16,7 @@ const PeopleList =() => {
 
     const [people, setPeople] = useState(['Peter'])
 // https://lambda-swapi.herokuapp.com/api/people
+//Backup api
     useEffect(() =>{
       axios.get('https://swapi.co/api/people/ ')
       .then(response => {
@@ -40,9 +41,7 @@ return (
             skinColor={person.skin_color}
             />
         )
-    })};
-
-        
+    })}    
     </Container>
 )
 
